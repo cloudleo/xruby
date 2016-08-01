@@ -72,12 +72,12 @@
     "binary-search",
     "two-bucket",
     "pascals-triangle",
-    "diamond",
     "custom-set",
     "minesweeper",
     "scale-generator",
     "protein-translation",
-    "perfect-numbers"
+    "perfect-numbers",
+    "diamond"
   ],
   "deprecated": [
     "octal",

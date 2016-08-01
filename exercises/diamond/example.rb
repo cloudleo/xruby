@@ -1,4 +1,4 @@
-module Dime
+module Bookkeeping
   VERSION = 1
 end
 class Diamond

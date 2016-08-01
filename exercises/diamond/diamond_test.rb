@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
+require "pry"
 gem 'minitest', '>= 5.0.0'
 require 'minitest/autorun'
-require_relative 'diamond'
+require_relative 'example'
 
 class DiamondTest < Minitest::Test
   def test_letter_A
@@ -12,20 +13,31 @@ class DiamondTest < Minitest::Test
   def test_letter_C
     skip
     answer = Diamond.make_diamond("C")
-    string = "  A  \n B B \nC   C\n B B \n  A  \n"
+    string = "  A  \n"+
+             " B B \n"+
+             "C   C\n"+
+             " B B \n"+
+             "  A  \n"
     assert_equal string, answer
   end
 
   def test_letter_E
     skip
     answer = Diamond.make_diamond("E")
-    string = "    A    \n   B B   \n  C   C  \n D     D \nE       "+
-             "E\n D     D \n  C   C  \n   B B   \n    A    \n"
+    string = "    A    \n"+
+             "   B B   \n"+
+             "  C   C  \n"+
+             " D     D \n"+
+             "E       E\n"+
+             " D     D \n"+
+             "  C   C  \n"+
+             "   B B   \n"+
+             "    A    \n"
     assert_equal string, answer
   end
 
   def test_bookkeeping
     skip
-    assert_equal 1, Dime::VERSION
+    assert_equal 1, Bookkeeping::VERSION
   end
 end
